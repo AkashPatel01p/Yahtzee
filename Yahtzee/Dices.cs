@@ -73,7 +73,7 @@ namespace Yahtzee
         }
 
         //pre: id != null
-        public String Face(Id id)
+        public String TopOf(Id id)
         {
             if (id == null)
             {

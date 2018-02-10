@@ -16,7 +16,8 @@ namespace Yahtzee
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            IRandom notTestFake = new ReallyRandom(new Random()); 
+            Application.Run(new Form1(notTestFake));
         }
     }
 }

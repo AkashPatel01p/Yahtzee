@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dice_1_in_cup = new System.Windows.Forms.CheckBox();
-            this.dice_2_in_cup = new System.Windows.Forms.CheckBox();
-            this.dice_3_in_cup = new System.Windows.Forms.CheckBox();
-            this.dice_4_in_cup = new System.Windows.Forms.CheckBox();
-            this.dice_5_in_cup = new System.Windows.Forms.CheckBox();
-            this.dice_6_in_cup = new System.Windows.Forms.CheckBox();
+            this.checkBox_dice_1_in_cup = new System.Windows.Forms.CheckBox();
+            this.checkBox_dice_2_in_cup = new System.Windows.Forms.CheckBox();
+            this.checkBox_dice_3_in_cup = new System.Windows.Forms.CheckBox();
+            this.checkBox_dice_4_in_cup = new System.Windows.Forms.CheckBox();
+            this.checkBox_dice_5_in_cup = new System.Windows.Forms.CheckBox();
+            this.checkBox_dice_6_in_cup = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -44,71 +44,71 @@
             this.btnRoll = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // dice_1_in_cup
+            // checkBox_dice_1_in_cup
             // 
-            this.dice_1_in_cup.AutoSize = true;
-            this.dice_1_in_cup.Location = new System.Drawing.Point(192, 308);
-            this.dice_1_in_cup.Name = "dice_1_in_cup";
-            this.dice_1_in_cup.Size = new System.Drawing.Size(65, 17);
-            this.dice_1_in_cup.TabIndex = 0;
-            this.dice_1_in_cup.Text = "is in cup";
-            this.dice_1_in_cup.UseVisualStyleBackColor = true;
-            this.dice_1_in_cup.CheckedChanged += new System.EventHandler(this.dice_1_in_cup_CheckedChanged);
+            this.checkBox_dice_1_in_cup.AutoSize = true;
+            this.checkBox_dice_1_in_cup.Location = new System.Drawing.Point(192, 308);
+            this.checkBox_dice_1_in_cup.Name = "checkBox_dice_1_in_cup";
+            this.checkBox_dice_1_in_cup.Size = new System.Drawing.Size(65, 17);
+            this.checkBox_dice_1_in_cup.TabIndex = 0;
+            this.checkBox_dice_1_in_cup.Text = "is in cup";
+            this.checkBox_dice_1_in_cup.UseVisualStyleBackColor = true;
+            this.checkBox_dice_1_in_cup.CheckedChanged += new System.EventHandler(this.checkBox_dice_1_in_cup_CheckedChanged);
             // 
-            // dice_2_in_cup
+            // checkBox_dice_2_in_cup
             // 
-            this.dice_2_in_cup.AutoSize = true;
-            this.dice_2_in_cup.Location = new System.Drawing.Point(337, 308);
-            this.dice_2_in_cup.Name = "dice_2_in_cup";
-            this.dice_2_in_cup.Size = new System.Drawing.Size(65, 17);
-            this.dice_2_in_cup.TabIndex = 1;
-            this.dice_2_in_cup.Text = "is in cup";
-            this.dice_2_in_cup.UseVisualStyleBackColor = true;
-            this.dice_2_in_cup.CheckedChanged += new System.EventHandler(this.dice_2_in_cup_CheckedChanged);
+            this.checkBox_dice_2_in_cup.AutoSize = true;
+            this.checkBox_dice_2_in_cup.Location = new System.Drawing.Point(337, 308);
+            this.checkBox_dice_2_in_cup.Name = "checkBox_dice_2_in_cup";
+            this.checkBox_dice_2_in_cup.Size = new System.Drawing.Size(65, 17);
+            this.checkBox_dice_2_in_cup.TabIndex = 1;
+            this.checkBox_dice_2_in_cup.Text = "is in cup";
+            this.checkBox_dice_2_in_cup.UseVisualStyleBackColor = true;
+            this.checkBox_dice_2_in_cup.CheckedChanged += new System.EventHandler(this.checkBox_dice_2_in_cup_CheckedChanged);
             // 
-            // dice_3_in_cup
+            // checkBox_dice_3_in_cup
             // 
-            this.dice_3_in_cup.AutoSize = true;
-            this.dice_3_in_cup.Location = new System.Drawing.Point(464, 308);
-            this.dice_3_in_cup.Name = "dice_3_in_cup";
-            this.dice_3_in_cup.Size = new System.Drawing.Size(65, 17);
-            this.dice_3_in_cup.TabIndex = 2;
-            this.dice_3_in_cup.Text = "is in cup";
-            this.dice_3_in_cup.UseVisualStyleBackColor = true;
-            this.dice_3_in_cup.CheckedChanged += new System.EventHandler(this.dice_3_in_cup_CheckedChanged);
+            this.checkBox_dice_3_in_cup.AutoSize = true;
+            this.checkBox_dice_3_in_cup.Location = new System.Drawing.Point(464, 308);
+            this.checkBox_dice_3_in_cup.Name = "checkBox_dice_3_in_cup";
+            this.checkBox_dice_3_in_cup.Size = new System.Drawing.Size(65, 17);
+            this.checkBox_dice_3_in_cup.TabIndex = 2;
+            this.checkBox_dice_3_in_cup.Text = "is in cup";
+            this.checkBox_dice_3_in_cup.UseVisualStyleBackColor = true;
+            this.checkBox_dice_3_in_cup.CheckedChanged += new System.EventHandler(this.checkBox_dice_3_in_cup_CheckedChanged);
             // 
-            // dice_4_in_cup
+            // checkBox_dice_4_in_cup
             // 
-            this.dice_4_in_cup.AutoSize = true;
-            this.dice_4_in_cup.Location = new System.Drawing.Point(595, 308);
-            this.dice_4_in_cup.Name = "dice_4_in_cup";
-            this.dice_4_in_cup.Size = new System.Drawing.Size(65, 17);
-            this.dice_4_in_cup.TabIndex = 3;
-            this.dice_4_in_cup.Text = "is in cup";
-            this.dice_4_in_cup.UseVisualStyleBackColor = true;
-            this.dice_4_in_cup.CheckedChanged += new System.EventHandler(this.dice_4_in_cup_CheckedChanged);
+            this.checkBox_dice_4_in_cup.AutoSize = true;
+            this.checkBox_dice_4_in_cup.Location = new System.Drawing.Point(595, 308);
+            this.checkBox_dice_4_in_cup.Name = "checkBox_dice_4_in_cup";
+            this.checkBox_dice_4_in_cup.Size = new System.Drawing.Size(65, 17);
+            this.checkBox_dice_4_in_cup.TabIndex = 3;
+            this.checkBox_dice_4_in_cup.Text = "is in cup";
+            this.checkBox_dice_4_in_cup.UseVisualStyleBackColor = true;
+            this.checkBox_dice_4_in_cup.CheckedChanged += new System.EventHandler(this.checkBox_dice_4_in_cup_CheckedChanged);
             // 
-            // dice_5_in_cup
+            // checkBox_dice_5_in_cup
             // 
-            this.dice_5_in_cup.AutoSize = true;
-            this.dice_5_in_cup.Location = new System.Drawing.Point(726, 308);
-            this.dice_5_in_cup.Name = "dice_5_in_cup";
-            this.dice_5_in_cup.Size = new System.Drawing.Size(65, 17);
-            this.dice_5_in_cup.TabIndex = 4;
-            this.dice_5_in_cup.Text = "is in cup";
-            this.dice_5_in_cup.UseVisualStyleBackColor = true;
-            this.dice_5_in_cup.CheckedChanged += new System.EventHandler(this.dice_5_in_cup_CheckedChanged);
+            this.checkBox_dice_5_in_cup.AutoSize = true;
+            this.checkBox_dice_5_in_cup.Location = new System.Drawing.Point(726, 308);
+            this.checkBox_dice_5_in_cup.Name = "checkBox_dice_5_in_cup";
+            this.checkBox_dice_5_in_cup.Size = new System.Drawing.Size(65, 17);
+            this.checkBox_dice_5_in_cup.TabIndex = 4;
+            this.checkBox_dice_5_in_cup.Text = "is in cup";
+            this.checkBox_dice_5_in_cup.UseVisualStyleBackColor = true;
+            this.checkBox_dice_5_in_cup.CheckedChanged += new System.EventHandler(this.checkBox_dice_5_in_cup_CheckedChanged);
             // 
-            // dice_6_in_cup
+            // checkBox_dice_6_in_cup
             // 
-            this.dice_6_in_cup.AutoSize = true;
-            this.dice_6_in_cup.Location = new System.Drawing.Point(862, 308);
-            this.dice_6_in_cup.Name = "dice_6_in_cup";
-            this.dice_6_in_cup.Size = new System.Drawing.Size(65, 17);
-            this.dice_6_in_cup.TabIndex = 5;
-            this.dice_6_in_cup.Text = "is in cup";
-            this.dice_6_in_cup.UseVisualStyleBackColor = true;
-            this.dice_6_in_cup.CheckedChanged += new System.EventHandler(this.dice_6_in_cup_CheckedChanged);
+            this.checkBox_dice_6_in_cup.AutoSize = true;
+            this.checkBox_dice_6_in_cup.Location = new System.Drawing.Point(862, 308);
+            this.checkBox_dice_6_in_cup.Name = "checkBox_dice_6_in_cup";
+            this.checkBox_dice_6_in_cup.Size = new System.Drawing.Size(65, 17);
+            this.checkBox_dice_6_in_cup.TabIndex = 5;
+            this.checkBox_dice_6_in_cup.Text = "is in cup";
+            this.checkBox_dice_6_in_cup.UseVisualStyleBackColor = true;
+            this.checkBox_dice_6_in_cup.CheckedChanged += new System.EventHandler(this.checkBox_dice_6_in_cup_CheckedChanged);
             // 
             // label1
             // 
@@ -196,12 +196,12 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dice_6_in_cup);
-            this.Controls.Add(this.dice_5_in_cup);
-            this.Controls.Add(this.dice_4_in_cup);
-            this.Controls.Add(this.dice_3_in_cup);
-            this.Controls.Add(this.dice_2_in_cup);
-            this.Controls.Add(this.dice_1_in_cup);
+            this.Controls.Add(this.checkBox_dice_6_in_cup);
+            this.Controls.Add(this.checkBox_dice_5_in_cup);
+            this.Controls.Add(this.checkBox_dice_4_in_cup);
+            this.Controls.Add(this.checkBox_dice_3_in_cup);
+            this.Controls.Add(this.checkBox_dice_2_in_cup);
+            this.Controls.Add(this.checkBox_dice_1_in_cup);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -211,12 +211,12 @@
 
         #endregion
 
-        private System.Windows.Forms.CheckBox dice_1_in_cup;
-        private System.Windows.Forms.CheckBox dice_2_in_cup;
-        private System.Windows.Forms.CheckBox dice_3_in_cup;
-        private System.Windows.Forms.CheckBox dice_4_in_cup;
-        private System.Windows.Forms.CheckBox dice_5_in_cup;
-        private System.Windows.Forms.CheckBox dice_6_in_cup;
+        private System.Windows.Forms.CheckBox checkBox_dice_1_in_cup;
+        private System.Windows.Forms.CheckBox checkBox_dice_2_in_cup;
+        private System.Windows.Forms.CheckBox checkBox_dice_3_in_cup;
+        private System.Windows.Forms.CheckBox checkBox_dice_4_in_cup;
+        private System.Windows.Forms.CheckBox checkBox_dice_5_in_cup;
+        private System.Windows.Forms.CheckBox checkBox_dice_6_in_cup;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;

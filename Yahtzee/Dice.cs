@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace Yahtzee
 {
-    //key must not be null
+
+
     //Represents a dice 
     //To Roll the Dice, it must be in the cup 
+    //Created beacuse dictonary is too complex 
     public class Dice<Id>
     {
 
