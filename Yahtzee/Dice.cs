@@ -67,7 +67,7 @@ namespace Yahtzee
             {
                 throw new ArgumentException("argument equalityComparer: equalityComparer != null");
             }
-            return true; 
+            return equalityComparer.Equals(this.id, id); 
         }
 
         public void MoveToCup()
@@ -82,6 +82,10 @@ namespace Yahtzee
             if(randomness == null)
             {
                 throw new ArgumentException("argument randomness: randomness != null"); 
+            }
+            if(!inCup)
+            {
+                return; 
             }
             inCup = false;
             face = randomness.next(0, maxInclusive + 1); 

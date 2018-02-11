@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace Yahtzee
 {
-    public class IntEquality :  IEqualityComparer<int>
+    public class IntEquality : IEqualityComparer<int>
     {
-        bool IEqualityComparer<int>.Equals(int x, int y)
+        public bool Equals(int x, int y)
         {
             return x == y; 
         }
 
-        int IEqualityComparer<int>.GetHashCode(int obj)
+        public int GetHashCode(int obj)
         {
             return obj; 
         }

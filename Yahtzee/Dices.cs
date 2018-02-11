@@ -11,6 +11,8 @@ namespace Yahtzee
     // Represents several dices 
     //key must be unique within the instance 
     //key must not be null 
+
+
     public class Dices<Id> 
     {
         public static String HIDDEN = "N/A";
@@ -41,25 +43,34 @@ namespace Yahtzee
             {
                 throw new ArgumentException("argument dice: dice != null");
             }
+            dices.Add(dice); 
         }
 
         //pre: id != null
         //pre: id in set of added dices 
         public void MoveToCup(Id id)
         {
+            bool found = false;
+
             if(id == null)
             {
                 throw new ArgumentException("arguemnt id: id != null"); 
             }
+
             foreach(var dice in dices)
             {
                 if(dice.SameDice(id, keyChecker))
                 {
                     dice.MoveToCup();
-                    return; 
+                    found = true; 
                 }
             }
-            throw new ArgumentException("argument id: id must belong to dice added"); 
+
+            if(!found)
+            {
+                throw new ArgumentException("argument id: id must belong to dice added");
+            }
+           
         }
 
         //pre: random != null
@@ -70,17 +81,33 @@ namespace Yahtzee
             {
                 throw new ArgumentException("argument random: random != null"); 
             }
+
+            foreach(var dice in dices)
+            {
+                dice.Roll(random); 
+            }
         }
 
         //pre: id != null
         public String TopOf(Id id)
         {
+            string topOf = HIDDEN;
+
             if (id == null)
             {
                 throw new ArgumentException("argument id: id != null");
             }
 
-            return ""; 
+            foreach(var dice in dices)
+            {
+                if(dice.SameDice(id, keyChecker))
+                {
+                    topOf = $"{dice.Top()}"; 
+
+                }
+            }
+
+            return topOf;  
         }
 
         private readonly List<Dice<Id>> dices;

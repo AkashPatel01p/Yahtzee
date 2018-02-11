@@ -41,6 +41,7 @@ namespace Yahtzee
             {
                 dices.MoveToCup(1);
             } 
+            
        
         }
 
@@ -88,12 +89,29 @@ namespace Yahtzee
         private void btnRoll_Click(object sender, EventArgs e)
         {
             dices.Roll(randomness);
+            DisplayDicesTopFaces();
+            IndicateDiceAreNotInCup();
+
+        }
+
+        private void IndicateDiceAreNotInCup()
+        {
+            checkBox_dice_1_in_cup.Checked = false;
+            checkBox_dice_2_in_cup.Checked = false;
+            checkBox_dice_3_in_cup.Checked = false;
+            checkBox_dice_4_in_cup.Checked = false;
+            checkBox_dice_5_in_cup.Checked = false;
+            checkBox_dice_6_in_cup.Checked = false;
+        }
+
+        private void DisplayDicesTopFaces()
+        {
             label1.Text = dices.TopOf(1);
             label2.Text = dices.TopOf(2);
             label3.Text = dices.TopOf(3);
             label4.Text = dices.TopOf(4);
             label5.Text = dices.TopOf(5);
-            label6.Text = dices.TopOf(6); 
+            label6.Text = dices.TopOf(6);
         }
     }
 }
