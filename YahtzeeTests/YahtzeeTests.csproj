@@ -56,9 +56,23 @@
     <Otherwise />
   </Choose>
   <ItemGroup>
+    <Compile Include="AcesTests.cs" />
+    <Compile Include="ChanceTests.cs" />
     <Compile Include="DiceTests.cs" />
+    <Compile Include="FivesTests.cs" />
+    <Compile Include="FourOfKindTests.cs" />
+    <Compile Include="FoursTests.cs" />
+    <Compile Include="FullHouseTests.cs" />
     <Compile Include="IntEqualityTests.cs" />
+    <Compile Include="LargeStraightTests.cs" />
+    <Compile Include="ListBackedAmountOfItemsTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SixesTests.cs" />
+    <Compile Include="SmallStraightTests.cs" />
+    <Compile Include="ThreeOfKindTests.cs" />
+    <Compile Include="ThreesTests.cs" />
+    <Compile Include="TwosTests.cs" />
+    <Compile Include="YahtzeeTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

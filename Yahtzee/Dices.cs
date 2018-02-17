@@ -11,10 +11,11 @@ namespace Yahtzee
     // Represents several dices 
     //key must be unique within the instance 
     //key must not be null 
-
-
-    public class Dices<Id> 
+    public sealed class Dices<Id> 
     {
+
+       
+
         public static String HIDDEN = "N/A";
 
         //pre: keyChecker != null 
@@ -109,7 +110,8 @@ namespace Yahtzee
 
             return topOf;  
         }
-
+        
+        
         private readonly List<Dice<Id>> dices;
         
         private readonly IEqualityComparer<Id> keyChecker;

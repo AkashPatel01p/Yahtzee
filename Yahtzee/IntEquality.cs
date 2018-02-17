@@ -6,8 +6,19 @@ using System.Threading.Tasks;
 
 namespace Yahtzee
 {
-    public class IntEquality : IEqualityComparer<int>
+    public sealed class IntEqualityByLiteral : IEqualityComparer<int>
     {
+
+        public static IEqualityComparer<int> Build()
+        {
+            return new IntEqualityByLiteral(); 
+        }
+
+        private IntEqualityByLiteral()
+        {
+
+        }
+
         public bool Equals(int x, int y)
         {
             return x == y; 

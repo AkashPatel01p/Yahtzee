@@ -72,24 +72,25 @@ namespace Yahtzee.Tests
         public void SameDice_DiffrentIdMustReturnFalse_Test()
         {
             //Arrange
-            var someDice = Dice<int>.Build(0, 6, 6, false);
-            var expected = false;
+            var someDice = Dice<int>.Build(0, 6, 5, false);
+            var equalityOperation = IntEqualityByLiteral.Build(); 
             //Act
-            bool actual = someDice.SameDice(1, new IntEquality());
+            bool actual = someDice.SameDice(1, equalityOperation);
             //Assert
-            Assert.AreEqual(expected, actual);
+            Assert.IsFalse(actual);
         }
 
         [TestMethod()]
         public void SameDice_SameIdMustReturnTrue_Test()
         {
             //Arrange
-            var someDice = Dice<int>.Build(0, 6, 6, false);
-            var expected = true;
+            var someDice = Dice<int>.Build(0, 6, 5, false);
+            var equalityOperation = IntEqualityByLiteral.Build(); 
+            bool actual = true; 
             //Act
-            bool actual = someDice.SameDice(0, new IntEquality());
+            actual = someDice.SameDice(0, equalityOperation);
             //Assert
-            Assert.AreEqual(expected, actual);
+            Assert.IsTrue(actual);
         }
 
 

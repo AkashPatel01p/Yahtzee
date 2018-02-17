@@ -13,7 +13,7 @@ namespace Yahtzee
         int next(int minInclusive, int maxExclusive); 
     }
 
-    public class ReallyRandom : IRandom
+    public sealed class ReallyRandom : IRandom
     {
         
         public ReallyRandom(Random random)
@@ -29,7 +29,7 @@ namespace Yahtzee
         private readonly Random random;
     }
 
-    public class TestFakeRandom : IRandom
+    public sealed class TestFakeRandom : IRandom
     {
         
 
@@ -51,4 +51,14 @@ namespace Yahtzee
         private int currentIndex;
         private readonly int[] values;
     }
+
+    //beacuse rolling a real dice gives 2 
+    public sealed class Two : IRandom
+    {
+        int IRandom.next(int minInclusive, int maxExclusive)
+        {
+            return 2; 
+        }
+    }
+
 }
